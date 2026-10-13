@@ -1,0 +1,17 @@
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Frontend dependencies and build output
+node_modules/
+.next/

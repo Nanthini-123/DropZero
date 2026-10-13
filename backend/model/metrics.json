@@ -1,0 +1,289 @@
+{
+  "dataset": {
+    "name": "Predict Students' Dropout and Academic Success",
+    "source": "UCI Machine Learning Repository",
+    "samples": 4424,
+    "features": 36,
+    "classes": [
+      "Dropout",
+      "Enrolled",
+      "Graduate"
+    ]
+  },
+  "random_forest": {
+    "accuracy": 0.7548022598870057,
+    "classification_report": {
+      "Dropout": {
+        "precision": 0.8305785123966942,
+        "recall": 0.7077464788732394,
+        "f1-score": 0.7642585551330798,
+        "support": 284.0
+      },
+      "Enrolled": {
+        "precision": 0.47619047619047616,
+        "recall": 0.5660377358490566,
+        "f1-score": 0.5172413793103449,
+        "support": 159.0
+      },
+      "Graduate": {
+        "precision": 0.8303964757709251,
+        "recall": 0.8529411764705882,
+        "f1-score": 0.8415178571428571,
+        "support": 442.0
+      },
+      "accuracy": 0.7548022598870057,
+      "macro avg": {
+        "precision": 0.7123884881193652,
+        "recall": 0.7089084637309614,
+        "f1-score": 0.7076725971954273,
+        "support": 885.0
+      },
+      "weighted avg": {
+        "precision": 0.7668178819499387,
+        "recall": 0.7548022598870057,
+        "f1-score": 0.7584651998025789,
+        "support": 885.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        201,
+        47,
+        36
+      ],
+      [
+        28,
+        90,
+        41
+      ],
+      [
+        13,
+        52,
+        377
+      ]
+    ]
+  },
+  "logistic_regression": {
+    "accuracy": 0.7288135593220338,
+    "classification_report": {
+      "Dropout": {
+        "precision": 0.8471615720524017,
+        "recall": 0.6830985915492958,
+        "f1-score": 0.7563352826510721,
+        "support": 284.0
+      },
+      "Enrolled": {
+        "precision": 0.408,
+        "recall": 0.6415094339622641,
+        "f1-score": 0.49877750611246946,
+        "support": 159.0
+      },
+      "Graduate": {
+        "precision": 0.8596059113300493,
+        "recall": 0.7895927601809954,
+        "f1-score": 0.8231132075471698,
+        "support": 442.0
+      },
+      "accuracy": 0.7288135593220338,
+      "macro avg": {
+        "precision": 0.704922494460817,
+        "recall": 0.7047335952308518,
+        "f1-score": 0.6927419987702371,
+        "support": 885.0
+      },
+      "weighted avg": {
+        "precision": 0.7744764963511456,
+        "recall": 0.7288135593220338,
+        "f1-score": 0.7434134254018487,
+        "support": 885.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        194,
+        66,
+        24
+      ],
+      [
+        24,
+        102,
+        33
+      ],
+      [
+        11,
+        82,
+        349
+      ]
+    ]
+  },
+  "selected_model": "Random Forest",
+  "selected_model_accuracy": 0.7548022598870057,
+  "selected_model_confusion_matrix": [
+    [
+      201,
+      47,
+      36
+    ],
+    [
+      28,
+      90,
+      41
+    ],
+    [
+      13,
+      52,
+      377
+    ]
+  ],
+  "feature_importance": [
+    {
+      "feature": "Curricular units 2nd sem (approved)",
+      "importance": 0.12309100316087838
+    },
+    {
+      "feature": "Curricular units 2nd sem (grade)",
+      "importance": 0.0927755845649271
+    },
+    {
+      "feature": "Curricular units 1st sem (approved)",
+      "importance": 0.0731183824118646
+    },
+    {
+      "feature": "Curricular units 1st sem (grade)",
+      "importance": 0.0627461623828205
+    },
+    {
+      "feature": "Admission grade",
+      "importance": 0.04763648058619816
+    },
+    {
+      "feature": "Curricular units 2nd sem (evaluations)",
+      "importance": 0.04638053632428895
+    },
+    {
+      "feature": "Previous qualification (grade)",
+      "importance": 0.04259971252501612
+    },
+    {
+      "feature": "Age at enrollment",
+      "importance": 0.04161258032983759
+    },
+    {
+      "feature": "Curricular units 1st sem (evaluations)",
+      "importance": 0.03970060370042314
+    },
+    {
+      "feature": "Tuition fees up to date",
+      "importance": 0.03959145662420166
+    },
+    {
+      "feature": "Course",
+      "importance": 0.034047013194366454
+    },
+    {
+      "feature": "Father's occupation",
+      "importance": 0.033455013574666195
+    },
+    {
+      "feature": "Mother's occupation",
+      "importance": 0.030579030203994908
+    },
+    {
+      "feature": "GDP",
+      "importance": 0.027498419563562942
+    },
+    {
+      "feature": "Unemployment rate",
+      "importance": 0.024861060302718674
+    },
+    {
+      "feature": "Mother's qualification",
+      "importance": 0.024288580303178847
+    },
+    {
+      "feature": "Inflation rate",
+      "importance": 0.023767606231612264
+    },
+    {
+      "feature": "Father's qualification",
+      "importance": 0.02297681559829578
+    },
+    {
+      "feature": "Application mode",
+      "importance": 0.022031264471329737
+    },
+    {
+      "feature": "Curricular units 2nd sem (enrolled)",
+      "importance": 0.02158351877279273
+    },
+    {
+      "feature": "Curricular units 1st sem (enrolled)",
+      "importance": 0.019644918539543907
+    },
+    {
+      "feature": "Application order",
+      "importance": 0.01669723224020244
+    },
+    {
+      "feature": "Scholarship holder",
+      "importance": 0.015788560809523396
+    },
+    {
+      "feature": "Debtor",
+      "importance": 0.01070650534957371
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.010499048258925059
+    },
+    {
+      "feature": "Displaced",
+      "importance": 0.008819189965383646
+    },
+    {
+      "feature": "Curricular units 1st sem (credited)",
+      "importance": 0.007505815327249984
+    },
+    {
+      "feature": "Curricular units 2nd sem (credited)",
+      "importance": 0.006690821757922014
+    },
+    {
+      "feature": "Previous qualification",
+      "importance": 0.00666345300684974
+    },
+    {
+      "feature": "Curricular units 1st sem (without evaluations)",
+      "importance": 0.005699390564151772
+    },
+    {
+      "feature": "Curricular units 2nd sem (without evaluations)",
+      "importance": 0.005083258530293284
+    },
+    {
+      "feature": "Marital status",
+      "importance": 0.0046662808844664125
+    },
+    {
+      "feature": "Daytime/evening attendance\t",
+      "importance": 0.0031203147975314527
+    },
+    {
+      "feature": "Nacionality",
+      "importance": 0.0017000848061521675
+    },
+    {
+      "feature": "International",
+      "importance": 0.0013967991753014333
+    },
+    {
+      "feature": "Educational special needs",
+      "importance": 0.0009775011599548874
+    }
+  ],
+  "target_mapping": {
+    "Dropout": "High",
+    "Enrolled": "Medium",
+    "Graduate": "Low"
+  }
+}
